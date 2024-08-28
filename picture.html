@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+"<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>">
+</head>
+<style>
+      h3{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #search{
+        display: flex;
+        /* margin-right:  200px; */
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    
+    }
+    #reload{
+        display: flex;
+        margin-left: 50px;
+         /* margin-right: 150px;  */
+         justify-content: center;
+         align-items: center;
+         font-size: 25px;
+    }
+    #user{
+        display: flex;
+        /* margin-right: 10px; */
+        margin-left: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    #icon{
+        color: green;
+        font-size: 70px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        /* font-size: 25px; */
+    }
+    .card img{
+        width: 252px;
+        height: 235px;
+    }
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: green;
+    }
+    p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: gray;
+    }
+    .container1{
+            font-size: 25px;
+        
+        }
+        #btn{
+            height: 35px ;
+            width: 100px ;
+            
+        }
+
+
+</style>
+<body>
+    <div class="container-fluid">
+        <!-- As a link -->
+<nav class="navbar navbar-light bg-light bg-success text-light ">
+    <div class="container-fluid bg-success">
+        <button type="button" class="btn btn-outline-success position-sticky"> 
+            <i id="icon1" class="fa-solid fa-bell bg-success text-light "></i>
+                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              10+
+              <span class="visually-hidden">unread messages</span>
+
+            </span>
+        </button>
+        <h3>Z Play</H3>
+            
+            <a href=""><i id="search" class="fa-solid fa-magnifying-glass"></i></a>
+           <a href=""><i id="reload" class="fa-solid fa-rotate-right"></i></a>
+            <!-- <a href=""><i id="user" class="fa-solid fa-user"></i></a> -->
+            <button id="btn" type="button" class="btn btn-outline-light mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              My Profile
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog bg-dark">
+                <div class="modal-content bg-info">
+                  <div class="modal-header">
+                    <h2 class="modal-title text-secondary " id="exampleModalLabel">My Profile</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <input type="text" class="form-control mt-2" id="exampleInputEmail1" placeholder="Enter Your Full Name">
+                      <input type="text" class="form-control mt-5" id="exampleInputEmail1" placeholder="Enter Your Phone Number">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Update</button>
+                  
+                  </div>
+                </div>
+              </div>
+          
+    
+</div>
+     </nav>
+     <div class="container">
+        <h1>Entertainment</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img id="img1" src="img/pic1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Nadaan Dil by Azaan Sami Khan/Chand Mheya by Asim Azhar</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img id="img2" src="img/pic2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Allay by Ali Zafar/Iraaday bY Abdul Hannan</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img id="img3" src="img/pic3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Billo Rani by Falak Shabbir/Pasoori by Ali Sethi & Shae Gill</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <h1 class="mt-3">Sports</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/pic4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cricket Live Update</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/th.jpg" width="280" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Football Live Update</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 16rem;">
+                <img src="img/PIC5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Hockey Live Update</p>
+                </div>
+              </div></div>
+        </div>
+        <h1 class="mt-3">Games</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/th (3).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Gaming Zone</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/th (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Candy Crush</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/th2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cut The Rope</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <h1 class="mt-3">Infotainment</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/pic6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Weather Update</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/pic7.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">News Update</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/pic8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Horoscope</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <h1 class="mt-3">Deals</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/pic10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Optp(Crispy Burger n Fries)</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/pic9.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Pizza Hut (Flat 30% Off)</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/th4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">J.(Flat 50% Off)</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <h1 class="mt-3">Islam</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/ayat1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Ayat of the Day</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/hadees-of-the-day.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Hadees of the Day</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 16rem;">
+                    <img src="img/pic11].jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Learn How to Pray Namaz Properly</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+     </div>
+     <div class="container1">
+        <nav class="navbar navbar-light bg-success text-light">
+            <div class="container-fluid">
+              <a href="home.html"><i class="fa-solid fa-house mx-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Home"></i></a>
+              <a href="usage.html"><i  class="fa-solid fa-chart-pie" data-bs-toggle="tooltip" data-bs-placement="top" title="Usage"></i></a>
+                   <a href="bundles.html"><i class="fa-solid fa-box" data-bs-toggle="tooltip" data-bs-placement="top" title="Bundles"></i></a>
+                   <a href="play.html"><i class="fa-solid fa-dice" data-bs-toggle="tooltip" data-bs-placement="top" title="Z play"></i></a>
+                    <a href="more.html"><i class="fa-solid fa-ellipsis-vertical mx-5" data-bs-toggle="tooltip" data-bs-placement="top" title="More"></i></a>        
+        
+        
+              
+            </div>
+          </nav>
+          <script>
+            $(document).ready(function(){
+              $('#img1').click(function(){
+                $(this).attr('src','img/th (4).jpg');
+              })
+              $('#img2').click(function(){
+                $(this).attr('src','img/m1.jpg');
+              })
+              $('#img3').click(function(){
+                $(this).attr('src','img/p1.jpg');
+              })
+
+
+            })
+
+          </script>
+
+</body>
+</html>

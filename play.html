@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<style>
+      h3{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #search{
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-right:  200px; */
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    
+    }
+    #reload{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 50px;
+         /* margin-right: 150px;  */
+         justify-content: center;
+         align-items: center;
+         font-size: 25px;
+    }
+    #user{
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-right: 10px; */
+        margin-left: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    #icon{
+        color: green;
+        font-size: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        /* font-size: 25px; */
+    }
+    #icon1{
+        font-size: 50px;
+        color: green;
+    
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    #carousel{
+        
+        height: 100%;
+        
+    }
+    .container1{
+            font-size: 25px;
+        
+        }
+        h2{
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 10px;
+        }
+        #btn{
+            height: 35px ;
+            width: 100px ;
+            
+        }
+        #icon2{
+          height: 25px ;
+        }
+
+</style>
+<body>
+    <div class="container-fluid">
+        <!-- As a link -->
+<nav class="navbar navbar-light bg-light bg-success text-light ">
+    <div class="container-fluid bg-success">
+        <button type="button" class="btn btn-outline-success position-sticky"> 
+            <i id="icon2" class="fa-solid fa-bell bg-success text-light "></i>
+                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              10+
+              <span class="visually-hidden">unread messages</span>
+
+            </span>
+        </button>
+        <h3>Z Play</H3>
+            
+            <a href=""><i id="search" class="fa-solid fa-magnifying-glass"></i></a>
+        
+           <a href=""><i id="reload" class="fa-solid fa-rotate-right"></i></a>
+            <!-- <a href=""><i id="user" class="fa-solid fa-user"></i></a> -->
+            <button id="btn" type="button" class="btn btn-outline-light mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              My Profile
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog bg-dark">
+                <div class="modal-content bg-info">
+                  <div class="modal-header">
+                    <h2 class="modal-title text-secondary " id="exampleModalLabel">My Profile</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <input type="text" class="form-control mt-2" id="exampleInputEmail1" placeholder="Enter Your Full Name">
+                      <input type="text" class="form-control mt-5" id="exampleInputEmail1" placeholder="Enter Your Phone Number">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Update</button>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+       
+    
+</div>
+     </nav>
+     
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="picture.html">    <i id="icon1"    class="fa-solid fa-baseball-bat-ball mt-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Tap For More"></i></a>
+            <div class="row"><h2>Sports</h2></div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <a href="picture.html"><i id="icon1" class="fa-solid fa-gamepad mt-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Tap For More"></i></a>
+              <div class="row"><h2>Games</h2></div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <a href="picture.html"><i id="icon1" class="fa-regular fa-handshake mt-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Tap For More"></i></a>
+              <div class="row"><h2>Deals</h2></div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+               <a href="picture.html"> <i id="icon1" class="fa-solid fa-headphones mt-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Tap For More"></i></a>
+               <div class="row"><h2>Infotainment</h2></div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+               <a href="picture.html"><i id="icon1" class="fa-solid fa-clapperboard mt-5 " data-bs-toggle="tooltip" data-bs-placement="top" title="Tap For More"></i></a>
+               <div class="row"><h2>Entertainment</h2></div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <a href="picture.html"> <i id="icon1" class="fa-solid fa-mosque mt-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Tap For More"></i></a>
+              <div class="row"><h2>Islam</h2></div>
+            </div>
+        </div>
+        <div class="contaainer-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div id="carousel" class="carousel-inner mt-5">
+              <div class="carousel-item active">
+                <img src="img/zong5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/zong.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Photo-Release.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="container1">
+            <nav class="navbar navbar-light bg-success text-light">
+                <div class="container-fluid">
+                  <a href="home.html"><i class="fa-solid fa-house mx-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Home"></i></a>
+        <a href="usage.html"><i  class="fa-solid fa-chart-pie" data-bs-toggle="tooltip" data-bs-placement="top" title="Usage"></i></a>
+             <a href="bundles.html"><i class="fa-solid fa-box" data-bs-toggle="tooltip" data-bs-placement="top" title="Bundles"></i></a>
+             <a href="play.html"><i class="fa-solid fa-dice" data-bs-toggle="tooltip" data-bs-placement="top" title="Z play"></i></a>
+              <a href="more.html"><i class="fa-solid fa-ellipsis-vertical mx-5" data-bs-toggle="tooltip" data-bs-placement="top" title="More"></i></a>
+            
+            
+            
+                  
+                </div>
+              </nav>
+
+</body>
+</html>
